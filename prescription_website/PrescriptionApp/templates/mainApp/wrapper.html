@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Заголовок страницы</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrapp.min.css' %}" type="text/css">
 </head>
 <body style="background: #B1D182">
+    {% include 'mainApp/includes/some_html.html' %}
     {% block content %}
-
     {% endblock %}
 </body>
 </html>
